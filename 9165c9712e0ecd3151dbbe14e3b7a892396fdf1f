@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba7be1f8_dc756d33",
+        "filename": "rsd-lib.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-11-27T18:15:33Z",
+      "side": 1,
+      "message": "The package name should be python-rsd-lib, which is the convention for Python packages.",
+      "revId": "9165c9712e0ecd3151dbbe14e3b7a892396fdf1f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_1c8f0525",
+        "filename": "rsd-lib.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-11-27T18:15:33Z",
+      "side": 1,
+      "message": "Since this is the same name as the name in line 1, we are getting the error during the build. For an initial test you can remove it and see if it builds, but later in the review you should update the spec to create the python2 and python3 subpackages, see https://github.com/openstack-packages/openstack-example-spec/blob/master/python-example-library.spec for an example.",
+      "revId": "9165c9712e0ecd3151dbbe14e3b7a892396fdf1f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
