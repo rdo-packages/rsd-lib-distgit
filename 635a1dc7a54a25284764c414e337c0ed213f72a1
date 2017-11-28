@@ -1,0 +1,101 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba7be1f8_57b4f6f1",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 8
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-11-28T18:27:37Z",
+      "side": 1,
+      "message": "We should create a macro to use rsd-lib when appropriate, and python-rsd-lib when needed. Usually, we do something like:\n\n%global sname rsd-lib",
+      "revId": "635a1dc7a54a25284764c414e337c0ed213f72a1",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_77b9fae8",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 8
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-11-28T18:27:37Z",
+      "side": 1,
+      "message": "So here, it would be:\n\nName: python-%{sname}",
+      "revId": "635a1dc7a54a25284764c414e337c0ed213f72a1",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_97cd8e89",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 8
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-11-28T18:27:37Z",
+      "side": 1,
+      "message": "And we would use %{sname} instead of %{name} for URL and Source0, since this is the name used in upstream openstack.",
+      "revId": "635a1dc7a54a25284764c414e337c0ed213f72a1",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_b7ca926c",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 8
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-11-28T18:27:37Z",
+      "side": 1,
+      "message": "This line is not needed. The python_provide macro will automatically create that Provides:",
+      "range": {
+        "startLine": 43,
+        "startChar": 0,
+        "endLine": 43,
+        "endChar": 52
+      },
+      "revId": "635a1dc7a54a25284764c414e337c0ed213f72a1",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_d7c70663",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 8
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-11-28T18:27:37Z",
+      "side": 1,
+      "message": "Here, it should be:\n\n%autosetup -n %{sname}",
+      "range": {
+        "startLine": 84,
+        "startChar": 0,
+        "endLine": 84,
+        "endChar": 28
+      },
+      "revId": "635a1dc7a54a25284764c414e337c0ed213f72a1",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
