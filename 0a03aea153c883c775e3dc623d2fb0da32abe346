@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba7be1f8_f7eecab3",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 9
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-11-29T09:00:45Z",
+      "side": 1,
+      "message": "I realized what was wrong. We are missing the version here, please use:\n\n%autosetup -n %{sname}-%{upstream_version}",
+      "revId": "0a03aea153c883c775e3dc623d2fb0da32abe346",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
