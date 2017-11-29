@@ -16,6 +16,24 @@
       "revId": "0a03aea153c883c775e3dc623d2fb0da32abe346",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_573b16eb",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 9
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 479
+      },
+      "writtenOn": "2017-11-29T17:29:32Z",
+      "side": 1,
+      "message": "Thank you, made that change. Was getting a failure saying the URL wasn\u0027t a git repository so I also changed the value for URL from github.com to git.openstack.org.",
+      "parentUuid": "ba7be1f8_f7eecab3",
+      "revId": "0a03aea153c883c775e3dc623d2fb0da32abe346",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
