@@ -212,6 +212,30 @@
     },
     {
       "key": {
+        "uuid": "ba7be1f8_429a7615",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 17
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 479
+      },
+      "writtenOn": "2017-11-30T18:02:00Z",
+      "side": 1,
+      "message": "Okay I\u0027ll get right on that, thanks!",
+      "parentUuid": "ba7be1f8_02f95e4d",
+      "range": {
+        "startLine": 32,
+        "startChar": 0,
+        "endLine": 32,
+        "endChar": 36
+      },
+      "revId": "bba1bb7462cd756153e282726e24dad41e4fcd26",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba7be1f8_82b54ecf",
         "filename": "python-rsd-lib.spec",
         "patchSetId": 17
