@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba7be1f8_02007ea9",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 17
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-11-30T11:22:17Z",
+      "side": 1,
+      "message": "This should be python-validictory. However, it is not in the dependency repo, and not even in Fedora.\n\nSo we need to get it packaged in Fedora first, then import it to the dependency repo.",
+      "range": {
+        "startLine": 32,
+        "startChar": 0,
+        "endLine": 32,
+        "endChar": 36
+      },
+      "revId": "bba1bb7462cd756153e282726e24dad41e4fcd26",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
