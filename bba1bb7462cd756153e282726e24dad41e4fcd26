@@ -2,6 +2,121 @@
   "comments": [
     {
       "key": {
+        "uuid": "ba7be1f8_22b662dd",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 17
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2017-11-30T14:26:33Z",
+      "side": 1,
+      "message": "This should be python2-devel",
+      "range": {
+        "startLine": 18,
+        "startChar": 16,
+        "endLine": 18,
+        "endChar": 28
+      },
+      "revId": "bba1bb7462cd756153e282726e24dad41e4fcd26",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_a2a25298",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 17
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2017-11-30T14:26:33Z",
+      "side": 1,
+      "message": "normally coverage report is not done in packaging tests, coverage can be removed as BuildRequires / BuildConflicts",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 38
+      },
+      "revId": "bba1bb7462cd756153e282726e24dad41e4fcd26",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_c29f464f",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 17
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2017-11-30T14:26:33Z",
+      "side": 1,
+      "message": "In most cases setup.py tests only runs unit tests, not syntax tests, so python-hacking is not required.",
+      "range": {
+        "startLine": 21,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 40
+      },
+      "revId": "bba1bb7462cd756153e282726e24dad41e4fcd26",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_829e2e55",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 17
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2017-11-30T14:26:33Z",
+      "side": 1,
+      "message": "HTML documentation is not being built in the spec so we have two options:\n- Remove python-openstackdocstheme and python-sphinx as BuildRequires (are only needed for HTML doc).\n- Build documentation and add it in a -doc package (you can take https://github.com/rdo-packages/openstackclient-distgit/blob/rpm-master/python-openstackclient.spec as reference)",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 51
+      },
+      "revId": "bba1bb7462cd756153e282726e24dad41e4fcd26",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_42bb56c4",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 17
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2017-11-30T14:26:33Z",
+      "side": 1,
+      "message": "See my comment about documentation.",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 38
+      },
+      "revId": "bba1bb7462cd756153e282726e24dad41e4fcd26",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba7be1f8_02007ea9",
         "filename": "python-rsd-lib.spec",
         "patchSetId": 17
@@ -19,6 +134,23 @@
         "endLine": 32,
         "endChar": 36
       },
+      "revId": "bba1bb7462cd756153e282726e24dad41e4fcd26",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_82b54ecf",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 17
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2017-11-30T14:26:33Z",
+      "side": 1,
+      "message": "Missing files section for python3-%{sname}",
       "revId": "bba1bb7462cd756153e282726e24dad41e4fcd26",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
