@@ -22,6 +22,30 @@
       "revId": "6caf6f87196abe3c28996db048f64ba010c00838",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_12d8c91c",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 22
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 479
+      },
+      "writtenOn": "2017-12-04T18:02:53Z",
+      "side": 1,
+      "message": "Ah yes, okay I\u0027ll add that. Thank you.",
+      "parentUuid": "ba7be1f8_92ecb9c9",
+      "range": {
+        "startLine": 140,
+        "startChar": 19,
+        "endLine": 140,
+        "endChar": 27
+      },
+      "revId": "6caf6f87196abe3c28996db048f64ba010c00838",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
