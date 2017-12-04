@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba7be1f8_92ecb9c9",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 22
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-12-04T17:53:59Z",
+      "side": 1,
+      "message": "Looking at the logs, files are installed under rsd_lib instead of rsd-lib (which is the content of %{sname}). It will be easier if we add another global, such as py_name, for rsd_lib.",
+      "range": {
+        "startLine": 140,
+        "startChar": 19,
+        "endLine": 140,
+        "endChar": 27
+      },
+      "revId": "6caf6f87196abe3c28996db048f64ba010c00838",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
