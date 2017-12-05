@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba7be1f8_852b952f",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 24
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-12-05T16:15:45Z",
+      "side": 1,
+      "message": "Since the -tests subpackages contain test code, they should have as requirements all packages that we need for testing (i.e. whatever we need from https://github.com/openstack/rsd-lib/blob/master/test-requirements.txt).",
+      "revId": "adbbcd9f12756ae0ccac3317247e05cda6a87fce",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_6526a16a",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 24
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-12-05T16:15:45Z",
+      "side": 1,
+      "message": "It would be good if we could add a %check section and run the project unit tests.",
+      "revId": "adbbcd9f12756ae0ccac3317247e05cda6a87fce",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
