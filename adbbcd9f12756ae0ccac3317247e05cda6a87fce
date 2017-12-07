@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "ba7be1f8_c8220401",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 24
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-12-07T09:26:49Z",
+      "side": 1,
+      "message": "Right, that\u0027s because the BuildRequires are correct. However, if we ever install the -tests subpackage and try to run tests there (not during a package build), we will need those requirements to be present.\n\nIt\u0027s a bit counter-intuitive, but the rule of thumb for test requirements is:\n\n- They should be a BuildRequires, so the %check section can pass during the build.\n- And then, they should be Requires for the -tests package, so we can run them if we want when we install it using rpm.",
+      "parentUuid": "ba7be1f8_68b4b8f2",
+      "revId": "adbbcd9f12756ae0ccac3317247e05cda6a87fce",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba7be1f8_6526a16a",
         "filename": "python-rsd-lib.spec",
         "patchSetId": 24
