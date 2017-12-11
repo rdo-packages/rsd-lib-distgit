@@ -55,6 +55,24 @@
     },
     {
       "key": {
+        "uuid": "ba7be1f8_d921f4b5",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 24
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 479
+      },
+      "writtenOn": "2017-12-11T20:34:35Z",
+      "side": 1,
+      "message": "Thank you, I\u0027ve fixed this in my latest patch.",
+      "parentUuid": "ba7be1f8_c8220401",
+      "revId": "adbbcd9f12756ae0ccac3317247e05cda6a87fce",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba7be1f8_6526a16a",
         "filename": "python-rsd-lib.spec",
         "patchSetId": 24
