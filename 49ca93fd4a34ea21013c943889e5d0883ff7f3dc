@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "7a75e904_ac0fa72d",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 26
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 479
+      },
+      "writtenOn": "2017-12-14T17:50:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7a75e904_a95a394e",
+      "range": {
+        "startLine": 16,
+        "startChar": 66,
+        "endLine": 16,
+        "endChar": 73
+      },
+      "revId": "49ca93fd4a34ea21013c943889e5d0883ff7f3dc",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a75e904_09318d0b",
         "filename": "python-rsd-lib.spec",
         "patchSetId": 26
@@ -36,6 +60,30 @@
       "writtenOn": "2017-12-14T17:14:33Z",
       "side": 1,
       "message": "These dirs are not included in any sub-package, you can remove them.",
+      "range": {
+        "startLine": 138,
+        "startChar": 0,
+        "endLine": 141,
+        "endChar": 61
+      },
+      "revId": "49ca93fd4a34ea21013c943889e5d0883ff7f3dc",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a75e904_0c26fbba",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 26
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 479
+      },
+      "writtenOn": "2017-12-14T17:50:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7a75e904_09318d0b",
       "range": {
         "startLine": 138,
         "startChar": 0,
