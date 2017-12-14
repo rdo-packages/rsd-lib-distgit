@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a75e904_8c402b37",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 27
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2017-12-14T18:47:28Z",
+      "side": 1,
+      "message": "I forgot in previous review, python2-devel is BuildRequires because it\u0027s needed to build the package but not to run tests, so it must not be Requires for -tests.",
+      "range": {
+        "startLine": 50,
+        "startChar": 0,
+        "endLine": 50,
+        "endChar": 23
+      },
+      "revId": "b829e47a448d807dd9bfcaa2065b4f68ab031c77",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a75e904_ac3de7bd",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 27
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2017-12-14T18:47:28Z",
+      "side": 1,
+      "message": "Same comment as for python2-devel in -tests.",
+      "range": {
+        "startLine": 86,
+        "startChar": 0,
+        "endLine": 86,
+        "endChar": 23
+      },
+      "revId": "b829e47a448d807dd9bfcaa2065b4f68ab031c77",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a75e904_ec47df49",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 27
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2017-12-14T18:47:28Z",
+      "side": 1,
+      "message": "This should be doc/build/html/.{doctrees,buildinfo}",
+      "revId": "b829e47a448d807dd9bfcaa2065b4f68ab031c77",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
