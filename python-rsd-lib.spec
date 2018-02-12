@@ -27,15 +27,15 @@ Summary:        %{summary}
 %{?python_provide:%python_provide python2-%{sname}}
 
 BuildRequires:  python2-devel
-BuildRequires:  python-jsonschema
+BuildRequires:  python2-jsonschema
 BuildRequires:  python2-pbr >= 2.0
-BuildRequires:  python-setuptools
-BuildRequires:  python-sushy >= 0.1.0
-BuildRequires:  python2-sushy-tests >= 0.1.0
+BuildRequires:  python2-setuptools
+BuildRequires:  python2-sushy >= 1.2.0
+BuildRequires:  python2-sushy-tests >= 1.2.0
 
-Requires:       python-jsonschema
+Requires:       python2-jsonschema
 Requires:       python2-pbr >= 2.0
-Requires:       python-sushy >= 0.1.0
+Requires:       python2-sushy >= 1.2.0
 
 %description -n python2-%{sname}
 This library extends the existing Sushy library to include functionality for
@@ -49,11 +49,11 @@ Summary: rsd-lib tests
 BuildRequires: python2-devel
 
 Requires: python2-%{sname} = %{version}-%{release}
-Requires: python-jsonschema
+Requires: python2-jsonschema
 Requires: python2-pbr
-Requires: python-setuptools
-Requires: python-sushy >= 0.1.0
-Requires: python2-sushy-tests >= 0.1.0
+Requires: python2-setuptools
+Requires: python2-sushy >= 1.2.0
+Requires: python2-sushy-tests >= 1.2.0
 
 %description -n python2-%{sname}-tests
 Tests for rsd-lib
@@ -100,9 +100,9 @@ Tests for rsd-lib
 %package -n python-%{sname}-doc
 Summary: rsd-lib documentation
 
-BuildRequires: python-sphinx
-BuildRequires: python-oslo-sphinx
-BuildRequires: python-openstackdocstheme >= 1.11.0
+BuildRequires: python2-sphinx
+BuildRequires: python2-oslo-sphinx
+BuildRequires: python2-openstackdocstheme >= 1.11.0
 
 %description -n python-%{sname}-doc
 Documentation for rsd-lib
