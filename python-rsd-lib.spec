@@ -7,7 +7,7 @@
 %global pyname rsd_lib
 
 Name:           python-%{sname}
-Version:        0.1.1
+Version:        0.2.2
 Release:        1%{?dist}
 Summary:        Python library for interfacing with Intel Rack Scale Design enabled hardware.
 
@@ -167,6 +167,9 @@ rm -rf .testrepository
 %doc doc/build/html README.rst
 
 %changelog
+* Thu May 03 2018 Lin Yang <lin.a.yang@intel.com> 0.2.2-1
+- Update to 0.2.2
+
 * Tue Feb 13 2018 RDO <dev@lists.rdoproject.org> 0.1.1-1
 - Update to 0.1.1
 
