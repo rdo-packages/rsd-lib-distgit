@@ -87,6 +87,9 @@ Documentation for rsd-lib
 rm -f *requirements.txt
 
 %build
+# amoralej - disable warning-is-error until https://review.openstack.org/#/c/636292/ is tagged.
+sed -i '/warning-is-error/d' setup.cfg
+
 %{pyver_build}
 
 %if 0%{?with_doc}
