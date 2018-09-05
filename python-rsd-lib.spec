@@ -167,3 +167,4 @@ rm -rf .testrepository
 %doc doc/build/html README.rst
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/rsd-lib/commit/?id=317902aac1bc47f1671b5bbb946c0c9323a62833
