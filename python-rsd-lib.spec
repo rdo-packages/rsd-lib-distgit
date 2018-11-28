@@ -1,7 +1,15 @@
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
-%if 0%{?fedora}
-%global with_python3 1
+# Macros for py2/py3 compatibility
+%if 0%{?fedora} || 0%{?rhel} > 7
+%global pyver %{python3_pkgversion}
+%else
+%global pyver 2
 %endif
+%global pyver_bin python%{pyver}
+%global pyver_sitelib %python%{pyver}_sitelib
+%global pyver_install %py%{pyver}_install
+%global pyver_build %py%{pyver}_build
+# End of macros for py2/py3 compatibility
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 %global sname rsd-lib
 %global pyname rsd_lib
@@ -22,87 +30,48 @@ Intel RackScale Design enabled hardware. Capabilities include logical node
 composition and decomposition, remote storage discovery and composition,
 and NVMe over PCIe drive attaching and detaching to logical nodes.
 
-%package -n     python2-%{sname}
+%package -n     python%{pyver}-%{sname}
 Summary:        %{summary}
-%{?python_provide:%python_provide python2-%{sname}}
+%{?python_provide:%python_provide python%{pyver}-%{sname}}
 
-BuildRequires:  python2-devel
-BuildRequires:  python2-jsonschema
-BuildRequires:  python2-pbr >= 2.0
-BuildRequires:  python2-setuptools
-BuildRequires:  python2-sushy >= 1.2.0
-BuildRequires:  python2-sushy-tests >= 1.2.0
+BuildRequires:  python%{pyver}-devel
+BuildRequires:  python%{pyver}-jsonschema
+BuildRequires:  python%{pyver}-pbr >= 2.0
+BuildRequires:  python%{pyver}-setuptools
+BuildRequires:  python%{pyver}-sushy >= 1.2.0
+BuildRequires:  python%{pyver}-sushy-tests >= 1.2.0
 
-Requires:       python2-jsonschema
-Requires:       python2-pbr >= 2.0
-Requires:       python2-sushy >= 1.2.0
+Requires:       python%{pyver}-jsonschema
+Requires:       python%{pyver}-pbr >= 2.0
+Requires:       python%{pyver}-sushy >= 1.2.0
 
-%description -n python2-%{sname}
+%description -n python%{pyver}-%{sname}
 This library extends the existing Sushy library to include functionality for
 Intel RackScale Design enabled hardware. Capabilities include logical node
 composition and decomposition, remote storage discovery and composition,
 and NVMe over PCIe drive attaching and detaching to logical nodes.
 
-%package -n python2-%{sname}-tests
+%package -n python%{pyver}-%{sname}-tests
 Summary: rsd-lib tests
 
-BuildRequires: python2-devel
+BuildRequires: python%{pyver}-devel
 
-Requires: python2-%{sname} = %{version}-%{release}
-Requires: python2-jsonschema
-Requires: python2-pbr
-Requires: python2-setuptools
-Requires: python2-sushy >= 1.2.0
-Requires: python2-sushy-tests >= 1.2.0
+Requires: python%{pyver}-%{sname} = %{version}-%{release}
+Requires: python%{pyver}-jsonschema
+Requires: python%{pyver}-pbr
+Requires: python%{pyver}-setuptools
+Requires: python%{pyver}-sushy >= 1.2.0
+Requires: python%{pyver}-sushy-tests >= 1.2.0
 
-%description -n python2-%{sname}-tests
+%description -n python%{pyver}-%{sname}-tests
 Tests for rsd-lib
-
-%if 0%{?with_python3}
-%package -n     python3-%{sname}
-Summary:        %{summary}
-
-%{?python_provide:%python_provide python3-%{sname}}
-BuildRequires:  python3-devel
-BuildRequires:  python3-jsonschema
-BuildRequires:  python3-pbr >= 2.0
-BuildRequires:  python3-setuptools
-BuildRequires:  python3-sushy >= 0.1.0
-BuildRequires:  python3-sushy-tests >= 0.1.0
-
-Requires:       python3-pbr >= 2.0
-Requires:       python3-sushy >= 0.1.0
-Requires:       python3-jsonschema
-
-%description -n python3-%{sname}
-This library extends the existing Sushy library to include functionality for
-Intel RackScale Design enabled hardware. Capabilities include logical node
-composition and decomposition, remote storage discovery and composition,
-and NVMe over PCIe drive attaching and detaching to logical nodes.
-
-%package -n python3-%{sname}-tests
-Summary: rsd-lib tests
-
-BuildRequires: python3-devel
-
-Requires: python3-%{sname} = %{version}-%{release}
-Requires: python3-jsonschema
-Requires: python3-pbr
-Requires: python3-setuptools
-Requires: python3-sushy >= 0.1.0
-Requires: python3-sushy-tests >= 0.1.0
-
-%description -n python3-%{sname}-tests
-Tests for rsd-lib
-
-%endif # with_python3
 
 %package -n python-%{sname}-doc
 Summary: rsd-lib documentation
 
-BuildRequires: python2-sphinx
-BuildRequires: python2-oslo-sphinx
-BuildRequires: python2-openstackdocstheme >= 1.11.0
+BuildRequires: python%{pyver}-sphinx
+BuildRequires: python%{pyver}-oslo-sphinx
+BuildRequires: python%{pyver}-openstackdocstheme >= 1.11.0
 
 %description -n python-%{sname}-doc
 Documentation for rsd-lib
@@ -114,53 +83,29 @@ Documentation for rsd-lib
 rm -f *requirements.txt
 
 %build
-%py2_build
-%if 0%{?with_python3}
-%py3_build
-%endif
+%{pyver_build}
 
 # generate html docs
-%{__python2} setup.py build_sphinx
-# remove the sphinx-build leftovers
+%{pyver_bin} setup.py build_sphinx
+# remove the sphinx-build-%{pyver} leftovers
 rm -rf doc/build/html/.{doctrees,buildinfo}
 
 %install
-%py2_install
-%if 0%{?with_python3}
-%py3_install
-%endif
+%{pyver_install}
 
 %check
-%if 0%{?with_python3}
-%{__python3} setup.py test
-rm -rf .testrepository
-%endif
-%{__python2} setup.py test
+%{pyver_bin} setup.py test
 
-%files -n python2-%{sname}
+%files -n python%{pyver}-%{sname}
 %license LICENSE
 %doc doc/source/readme.rst README.rst
-%{python2_sitelib}/%{pyname}
-%{python2_sitelib}/%{pyname}-*.egg-info
-%exclude %{python2_sitelib}/%{pyname}/tests
+%{pyver_sitelib}/%{pyname}
+%{pyver_sitelib}/%{pyname}-*.egg-info
+%exclude %{pyver_sitelib}/%{pyname}/tests
 
-%files -n python2-%{sname}-tests
+%files -n python%{pyver}-%{sname}-tests
 %license LICENSE
-%{python2_sitelib}/%{pyname}/tests
-
-%if 0%{?with_python3}
-%files -n python3-%{sname}
-%license LICENSE
-%doc doc/source/readme.rst README.rst
-%{python3_sitelib}/%{pyname}
-%{python3_sitelib}/%{pyname}-*.egg-info
-%exclude %{python3_sitelib}/%{pyname}/tests
-
-%files -n python3-%{sname}-tests
-%license LICENSE
-%{python3_sitelib}/%{pyname}/tests
-
-%endif # with_python3
+%{pyver_sitelib}/%{pyname}/tests
 
 %files -n python-%{sname}-doc
 %license LICENSE
