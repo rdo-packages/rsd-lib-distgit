@@ -113,3 +113,4 @@ export PYTHON=%{pyver_bin}
 %doc doc/build/html README.rst
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/rsd-lib/commit/?id=45a186958283fc04786eaaf92f75fcd132fe8db5
