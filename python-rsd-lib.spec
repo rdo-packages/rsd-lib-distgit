@@ -14,6 +14,8 @@
 %global sname rsd-lib
 %global pyname rsd_lib
 
+%global with_doc 1
+
 Name:           python-%{sname}
 Version:        XXX
 Release:        XXX
@@ -66,6 +68,7 @@ Requires: python%{pyver}-sushy-tests >= 1.2.0
 %description -n python%{pyver}-%{sname}-tests
 Tests for rsd-lib
 
+%if 0%{?with_doc}
 %package -n python-%{sname}-doc
 Summary: rsd-lib documentation
 
@@ -75,6 +78,7 @@ BuildRequires: python%{pyver}-openstackdocstheme >= 1.11.0
 
 %description -n python-%{sname}-doc
 Documentation for rsd-lib
+%endif
 
 %prep
 %autosetup -n %{sname}-%{upstream_version} -S git
@@ -85,10 +89,12 @@ rm -f *requirements.txt
 %build
 %{pyver_build}
 
+%if 0%{?with_doc}
 # generate html docs
 %{pyver_bin} setup.py build_sphinx
 # remove the sphinx-build-%{pyver} leftovers
 rm -rf doc/build/html/.{doctrees,buildinfo}
+%endif
 
 %install
 %{pyver_install}
@@ -109,8 +115,10 @@ export PYTHON=%{pyver_bin}
 %license LICENSE
 %{pyver_sitelib}/%{pyname}/tests
 
+%if 0%{?with_doc}
 %files -n python-%{sname}-doc
 %license LICENSE
 %doc doc/build/html README.rst
+%endif
 
 %changelog
