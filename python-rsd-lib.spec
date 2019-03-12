@@ -17,8 +17,8 @@
 %global with_doc 1
 
 Name:           python-%{sname}
-Version:        XXX
-Release:        XXX
+Version:        0.4.0
+Release:        1%{?dist}
 Summary:        Python library for interfacing with Intel Rack Scale Design enabled hardware.
 
 License:        ASL 2.0
@@ -125,3 +125,6 @@ export PYTHON=%{pyver_bin}
 %endif
 
 %changelog
+* Tue Mar 12 2019 RDO <dev@lists.rdoproject.org> 0.4.0-1
+- Update to 0.4.0
+
