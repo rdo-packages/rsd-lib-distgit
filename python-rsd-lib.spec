@@ -40,12 +40,12 @@ BuildRequires:  python%{pyver}-devel
 BuildRequires:  python%{pyver}-jsonschema
 BuildRequires:  python%{pyver}-pbr >= 2.0
 BuildRequires:  python%{pyver}-setuptools
-BuildRequires:  python%{pyver}-sushy >= 1.7.0
+BuildRequires:  python%{pyver}-sushy >= 1.8.1
 BuildRequires:  python%{pyver}-sushy-tests >= 1.7.0
 
 Requires:       python%{pyver}-jsonschema
 Requires:       python%{pyver}-pbr >= 2.0
-Requires:       python%{pyver}-sushy >= 1.7.0
+Requires:       python%{pyver}-sushy >= 1.8.1
 
 %description -n python%{pyver}-%{sname}
 This library extends the existing Sushy library to include functionality for
@@ -62,7 +62,7 @@ Requires: python%{pyver}-%{sname} = %{version}-%{release}
 Requires: python%{pyver}-jsonschema
 Requires: python%{pyver}-pbr
 Requires: python%{pyver}-setuptools
-Requires: python%{pyver}-sushy >= 1.7.0
+Requires: python%{pyver}-sushy >= 1.8.1
 Requires: python%{pyver}-sushy-tests >= 1.7.0
 
 %description -n python%{pyver}-%{sname}-tests
