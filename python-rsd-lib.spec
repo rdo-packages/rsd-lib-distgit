@@ -73,7 +73,6 @@ Tests for rsd-lib
 Summary: rsd-lib documentation
 
 BuildRequires: python%{pyver}-sphinx
-BuildRequires: python%{pyver}-oslo-sphinx
 BuildRequires: python%{pyver}-openstackdocstheme >= 1.11.0
 
 %description -n python-%{sname}-doc
