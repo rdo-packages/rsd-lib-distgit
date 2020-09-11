@@ -49,7 +49,6 @@ BuildRequires: python3-devel
 Requires: python3-%{sname} = %{version}-%{release}
 Requires: python3-jsonschema
 Requires: python3-pbr
-Requires: python3-setuptools
 Requires: python3-sushy >= 2.0.0
 Requires: python3-sushy-tests >= 1.7.0
 
