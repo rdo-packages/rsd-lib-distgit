@@ -45,7 +45,7 @@ BuildRequires:  python3-setuptools
 BuildRequires:  python3-sushy >= 1.8.1
 BuildRequires:  python3-sushy-tests >= 1.7.0
 
-Requires:       python3-jsonschema
+Requires:       python3-jsonschema >= 2.6.0
 Requires:       python3-pbr >= 2.0
 Requires:       python3-sushy >= 2.0.0
 %description -n python3-%{sname}
@@ -60,8 +60,8 @@ Summary: rsd-lib tests
 BuildRequires: python3-devel
 
 Requires: python3-%{sname} = %{version}-%{release}
-Requires: python3-jsonschema
-Requires: python3-pbr
+Requires: python3-jsonschema >= 2.6.0
+Requires: python3-pbr >= 2.0
 Requires: python3-sushy >= 2.0.0
 Requires: python3-sushy-tests >= 1.7.0
 
