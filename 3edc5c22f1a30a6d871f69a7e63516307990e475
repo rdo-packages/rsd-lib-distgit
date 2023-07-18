@@ -16,6 +16,24 @@
       "message": "I\u0027d keep information why tests are blocked",
       "revId": "3edc5c22f1a30a6d871f69a7e63516307990e475",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1e67ae59_8dabeb09",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 8
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-07-18T12:54:59Z",
+      "side": 1,
+      "message": "Actually the information was outdated, I updated it with the current reason why it\u0027s failing",
+      "parentUuid": "bf89700c_30a48653",
+      "revId": "3edc5c22f1a30a6d871f69a7e63516307990e475",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
