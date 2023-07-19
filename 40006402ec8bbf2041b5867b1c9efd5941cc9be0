@@ -16,6 +16,24 @@
       "message": "are macros here intentionally doubled? and devel?",
       "revId": "40006402ec8bbf2041b5867b1c9efd5941cc9be0",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e0b2dd92_69738cb8",
+        "filename": "python-rsd-lib.spec",
+        "patchSetId": 9
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-07-19T15:40:52Z",
+      "side": 1,
+      "message": "good catch",
+      "parentUuid": "27ebb596_97f3b352",
+      "revId": "40006402ec8bbf2041b5867b1c9efd5941cc9be0",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
