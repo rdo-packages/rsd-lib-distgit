@@ -109,7 +109,7 @@ sed -i '/warning-is-error/d' setup.cfg
 
 %if 0%{?with_doc}
 # generate html docs
-%tox -e docs
+sphinx-build -b html doc/source doc/build/html
 # remove the sphinx-build-3 leftovers
 rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
