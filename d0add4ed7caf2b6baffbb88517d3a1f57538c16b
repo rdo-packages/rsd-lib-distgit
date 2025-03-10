@@ -1,0 +1,8 @@
+Code-Review+2: Joel Capitao <jcapitao@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Workflow+1: Joel Capitao <jcapitao@redhat.com>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Mon, 10 Mar 2025 10:34:15 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/rsd-lib-distgit/+/56668
+Project: openstack/rsd-lib-distgit
+Branch: refs/heads/rpm-master
